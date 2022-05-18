@@ -1,0 +1,39 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+    <div style="text-align:center">
+    Instructions
+    <div/>
+{% endblock %}
+
+
+{% block content %}
+
+
+    {% include Constants.instructions_template %}
+
+    <h5> Your Task </h5>
+    <p>
+        Your task in is to guess the behaviors of the participants in this game.
+        Your earnings will depend on the accuracy of your guesses.
+    </p>
+
+    <p>
+        Before your task begins, you will first need to finish a quiz that checks your understanding of the game.
+        You have to answer all the quiz questions correctly in order to continue with the experiment.
+    </p>
+
+    <p>
+        The instructions are still available for you to read when you complete the quiz.
+    </p>
+
+    {#    <div style="text-align:center">#}
+    {#        <button id="button_start" class="btn text-center" >Start the Quiz</button>#}
+    {#    </div>#}
+
+    <div style="text-align:center">
+        <button onclick="submit()" class="nexttab btn-primary btn next">Start the Quiz</button>
+    </div>
+{% endblock %}
+
