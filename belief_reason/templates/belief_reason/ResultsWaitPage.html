@@ -1,0 +1,24 @@
+{% extends 'otree/WaitPage.html' %}
+{% load staticfiles otree %}
+
+
+{% block title %}
+{% endblock %}
+
+{% block content %}
+    <div style="text-align: center">
+        <p>This is the end of the experiment.</p>
+        <p> <strong> Payment Information </strong> </p>
+        <table class="table table-bordered">
+            <tr> <td>Participation fee</td><td>{{ participation_fee }}</td> </tr>
+            <tr> <td>Earnings from Task I</td><td>{{ real_currency }}{{ paymentI }}</td> </tr>
+            <tr> <td>Earnings from Task II</td><td>To be determined</td> </tr>
+            <tr> <td>Total Payment</td><td>To be determined</td> </tr>
+        </table>
+    </div>
+
+    <p>For Task II, we must wait for all the participants of that task to finish in order to determine whether your guesses
+        are the same the the most popular guesses and hence determine your earnings.</p>
+{% endblock %}
+
+
