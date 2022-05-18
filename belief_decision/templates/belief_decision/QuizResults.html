@@ -1,0 +1,22 @@
+{% extends "global/Page.html" %}
+{% load staticfiles otree %}
+
+{% block title %}
+{% endblock %}
+
+
+{% block content %}
+
+
+    <p style="text-align : center">
+        You have successfully completed the quiz.
+    </p>
+   <p style="text-align : center">
+        Click "Next" to start your tasks.
+    </p>
+
+    <div style="text-align:right">
+        {% next_button %}
+    </div>
+
+{% endblock %}
